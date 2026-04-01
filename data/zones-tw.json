@@ -1,0 +1,36 @@
+[
+  {
+    "zoneId": "TW_ZONE_001",
+    "zoneName": "North Coast",
+    "color": "#ff6b6b",
+    "postalCodes": [
+      "251",
+      "252",
+      "253"
+    ],
+    "memo": "예시 구역"
+  },
+  {
+    "zoneId": "TW_ZONE_002",
+    "zoneName": "Luzhou / Wugu / Bali",
+    "color": "#4dabf7",
+    "postalCodes": [
+      "247",
+      "248",
+      "249"
+    ],
+    "memo": "예시 구역"
+  },
+  {
+    "zoneId": "TW_ZONE_003",
+    "zoneName": "Sanchong / Xinzhuang / Taishan / Linkou",
+    "color": "#51cf66",
+    "postalCodes": [
+      "241",
+      "242",
+      "243",
+      "244"
+    ],
+    "memo": "예시 구역"
+  }
+]
