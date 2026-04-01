@@ -1,0 +1,31 @@
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #1f2937; background: #f8fafc; }
+.app { display: grid; grid-template-columns: 360px 1fr; height: 100vh; }
+.sidebar { padding: 20px; border-right: 1px solid #e5e7eb; background: #fff; overflow-y: auto; }
+.map-wrap { position: relative; }
+#map { width: 100%; height: 100vh; }
+h1, h2 { margin: 0 0 10px; }
+h1 { font-size: 24px; }
+h2 { font-size: 18px; }
+.sub { margin: 0 0 16px; color: #6b7280; font-size: 14px; }
+.label { display: block; margin: 12px 0 6px; font-size: 13px; font-weight: 700; }
+input, textarea, select { width: 100%; padding: 10px 12px; border: 1px solid #d1d5db; border-radius: 10px; background: #fff; }
+.btn, .link-btn { width: 100%; margin-top: 10px; padding: 11px 14px; border: 1px solid #d1d5db; border-radius: 10px; background: #fff; cursor: pointer; text-align: center; text-decoration: none; color: #111827; display: inline-block; }
+.btn.primary, .link-btn { background: #111827; color: #fff; border-color: #111827; }
+.btn.ghost { background: #f3f4f6; }
+.btn.danger { background: #dc2626; color: #fff; border-color: #dc2626; }
+.divider { height: 1px; background: #e5e7eb; margin: 18px 0; }
+.zone-list { display: flex; flex-direction: column; gap: 8px; }
+.zone-item { padding: 10px 12px; border-radius: 10px; border: 1px solid #e5e7eb; cursor: pointer; background: #fff; }
+.zone-item.active { outline: 2px solid #111827; }
+.zone-swatch { display: inline-block; width: 10px; height: 10px; border-radius: 999px; margin-right: 8px; }
+.info-panel { min-height: 110px; padding: 12px; border-radius: 10px; background: #f9fafb; border: 1px solid #e5e7eb; white-space: pre-wrap; line-height: 1.5; }
+.admin-layout { display: grid; grid-template-columns: 420px 1fr; min-height: 100vh; }
+.admin-sidebar { padding: 20px; border-right: 1px solid #e5e7eb; background: #fff; }
+.admin-main { padding: 20px; }
+.form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+.button-row { display: grid; grid-template-columns: repeat(3,1fr); gap: 10px; margin-top: 12px; }
+.json-preview { background: #111827; color: #e5e7eb; padding: 16px; border-radius: 12px; min-height: 70vh; overflow: auto; }
+.mapboxgl-popup-content { padding: 12px 14px; border-radius: 12px; }
+small.muted { color: #6b7280; }
