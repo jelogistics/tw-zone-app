@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TW Delivery Zone Map</title>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <h1>대만 배송 구역 지도</h1>
+      <p class="sub">1차 버전 · 타이베이/신베이 샘플</p>
+
+      <label class="label" for="mapboxToken">Mapbox Token</label>
+      <input id="mapboxToken" type="text" placeholder="pk.로 시작하는 Mapbox Public Token" />
+      <button id="applyTokenBtn" class="btn primary">지도 시작</button>
+
+      <div class="divider"></div>
+
+      <label class="label" for="searchInput">우편번호 / 구역명 검색</label>
+      <input id="searchInput" type="text" placeholder="예: 247 또는 Luzhou" />
+      <button id="searchBtn" class="btn">검색</button>
+      <button id="resetBtn" class="btn ghost">초기화</button>
+
+      <div class="divider"></div>
+
+      <h2>구역 목록</h2>
+      <div id="zoneList" class="zone-list"></div>
+
+      <div class="divider"></div>
+      <h2>선택 정보</h2>
+      <div id="infoPanel" class="info-panel">
+        지도를 시작한 뒤 구역을 클릭하세요.
+      </div>
+
+      <div class="divider"></div>
+      <a class="link-btn" href="./admin.html">관리자 페이지 열기</a>
+    </aside>
+
+    <main class="map-wrap">
+      <div id="map"></div>
+    </main>
+  </div>
+
+  <script src="https://api.mapbox.com/mapbox-gl-js/v3.12.0/mapbox-gl.js"></script>
+  <script src="./js/app.js"></script>
+</body>
+</html>

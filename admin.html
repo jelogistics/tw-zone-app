@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TW Delivery Zone Admin</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="admin-layout">
+    <section class="admin-sidebar">
+      <h1>관리자 페이지</h1>
+      <p class="sub">구역을 수정하고 JSON으로 내려받은 뒤 GitHub에 업로드하면 됩니다.</p>
+
+      <label class="label">구역 선택</label>
+      <select id="zoneSelect"></select>
+
+      <div class="form-grid">
+        <div>
+          <label class="label">Zone ID</label>
+          <input id="zoneId" type="text" />
+        </div>
+        <div>
+          <label class="label">구역명</label>
+          <input id="zoneName" type="text" />
+        </div>
+      </div>
+
+      <div class="form-grid">
+        <div>
+          <label class="label">색상</label>
+          <input id="zoneColor" type="color" />
+        </div>
+        <div>
+          <label class="label">우편번호(쉼표로 구분)</label>
+          <input id="postalCodes" type="text" placeholder="247,248,249" />
+        </div>
+      </div>
+
+      <label class="label">메모</label>
+      <textarea id="zoneMemo" rows="4"></textarea>
+
+      <div class="button-row">
+        <button id="newZoneBtn" class="btn">새 구역</button>
+        <button id="saveZoneBtn" class="btn primary">현재 구역 저장</button>
+        <button id="deleteZoneBtn" class="btn danger">현재 구역 삭제</button>
+      </div>
+
+      <div class="divider"></div>
+
+      <button id="downloadBtn" class="btn primary">zones-tw.json 다운로드</button>
+      <a class="link-btn" href="./index.html">지도 페이지로 돌아가기</a>
+    </section>
+
+    <section class="admin-main">
+      <h2>현재 JSON 미리보기</h2>
+      <pre id="jsonPreview" class="json-preview"></pre>
+    </section>
+  </div>
+
+  <script src="./js/admin.js"></script>
+</body>
+</html>
